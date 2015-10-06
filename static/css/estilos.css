@@ -114,7 +114,7 @@
 .Header-image{	
 	border-radius: 50%;
 	-webkit-transition: 1s;
-	width: 15%;
+	width: 10%;
     height: 200px;
 }
 .Header-image:hover{	
@@ -227,6 +227,30 @@
 	color: black;
 }
 
+@media screen and (max-width: 1600px){
+	.Header-image {
+		width: 12%;
+	    height: 180px;
+	}
+}
+@media screen and (max-width: 1200px){
+	.Header-image {
+		width: 12%;
+	    height: 160px;
+	}
+}
+@media screen and (max-width: 1000px){
+	.Header-image {
+		width: 14%;
+	    height: 160px;
+	}
+}
+@media screen and (max-width: 900px){
+	.Header-image {
+		width: 15%;
+	    height: 140px;
+	}
+}
 @media screen and (max-width: 768px){
 	
 	.Profile-colum{
