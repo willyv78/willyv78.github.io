@@ -155,9 +155,11 @@
 }
 
 .Work{
-	margin-top: 2em;
 	text-align: center;
 	padding: 0 2.5em;
+}
+.Work-title{
+	margin: 0.5em;
 }
 .Work-item{
 	display: inline-block;
@@ -167,10 +169,10 @@
 .Work-imageContainer{
 	margin: 0;
 }
-.Work p{
+/*.Work p{
 	padding: 2em 2em;
 	text-align: justify;
-}
+}*/
 #Work-imageCel{
 	background: url('../images/imag.png') 0 -1889px;
 	display: inline-block;
@@ -228,7 +230,7 @@
 @media screen and (max-width: 768px){
 	
 	.Profile-colum{
-		padding: 1em
+		padding: .5em;
 	}
 	.MainMenu {		
 		background: rgb(77, 142, 181);						
@@ -248,6 +250,14 @@
 		margin-top: 2.5em;
 		padding-top: 2em;
 	}
+	.Header-image {
+	    height: 120px;
+	}
+	.Header-name {
+	    font-size: 3em;
+	    font-weight: 600;
+	    margin: 31px;
+	}
 	.MainMenu-link{
 		font-family: 'Anton';
 		font-size: 0.8em;
@@ -259,9 +269,17 @@
 	.MainMenu li a:focus{
 		color:lightgray;
 	}	
-	.u-containerDefault{
-		max-width: 550px;
-		margin: 0 auto;
+	.u-containerDefault {
+	    max-width: 90%;
+	    margin: 0 auto;
+	}
+	.texto {
+	    padding: .5em;
+	    font-size: 1.2rem;
+	}
+	.Profile-item {
+	    padding: .1em 0;
+	    font-size: 1em;
 	}
 }
 
