@@ -111,11 +111,14 @@
 .Header-imageContainer p:first-child{
 	-webkit-margin-before: 0;
 }
+.Header-imageContainer p:last-child{
+	-webkit-margin-after: 0;
+}
 .Header-image{	
 	border-radius: 50%;
 	-webkit-transition: 1s;
-	width: 10%;
-    height: 200px;
+	width: 14%;
+    height: 240px;
 }
 .Header-image:hover{	
 	border: 4px solid white;
@@ -129,9 +132,11 @@
 	font-weight: 700;
 	margin: 0px;
 }
-.Profile{
-	text-align: center;
-	padding: 0 2.5em;
+.Profile {
+    text-align: center;
+    padding: 0;
+    background-color: cadetblue;
+    color: aliceblue;
 }
 .Profile-description {
 	margin-bottom: 2em;
@@ -144,6 +149,8 @@
 }
 .Profile-title{
 	margin: 0.5em;
+	color: rgb(255, 255, 255);
+	border-bottom: 2px dashed rgb(255, 255, 255);
 }
 .Profile-list{
 	margin: 0;
@@ -197,21 +204,24 @@
 .Footer-title{
 	color: white;
 	margin-bottom: 0;
+	font-size: 2em;
 }
 .Footer-description{
-	font-size: 1.2em;
+	font-size: 2em;
 	margin: 0 1em 1em 1em;
 	text-align: center;
-}.Footer-left{
+}
+.Footer-left{
 	display: inline-block;
 	margin-bottom: 1em;
 	max-width: 32em;
 	text-align: center;
 	vertical-align: top;	
-}.Footer-link{	
+}
+.Footer-link{	
 	color: white;
-	font-size: 2.5em;
-	margin-right: .7em;
+	font-size: 3em;
+	margin: .8em;
 	text-decoration: none;
 }
 .icon-facebook:hover,
@@ -227,32 +237,67 @@
 	color: black;
 }
 
+.u-containerDefault p:first-child{
+	-webkit-margin-before: 0;
+}
+
 @media screen and (max-width: 1600px){
 	.Header-image {
-		width: 12%;
-	    height: 180px;
+	    height: 220px;
+	    width: 15%;
 	}
 }
+
+@media screen and (max-width: 1400px){
+	.Header-image {
+	    height: 200px;
+	    width: 16%;
+	}
+}
+
 @media screen and (max-width: 1200px){
 	.Header-image {
-		width: 12%;
-	    height: 160px;
+	    height: 190px;
+	    width: 17%;
 	}
 }
+
+@media screen and (max-width: 1068px){
+	.Header-image {
+	    height: 200px;
+	    width: 20%;
+	}
+	.Header-imageContainer p{
+		-webkit-margin-before: 10px;
+		-webkit-margin-after: 10px;
+	}
+	.Header-name {
+	    font-size: 3.8em;
+	}
+}
+
 @media screen and (max-width: 1000px){
 	.Header-image {
-		width: 14%;
-	    height: 160px;
+	    height: 250px;
+	    width: 25%;
+	}
+	.Header-imageContainer p{
+		-webkit-margin-before: 5px;
+		-webkit-margin-after: 5px;
 	}
 }
+
 @media screen and (max-width: 900px){
 	.Header-image {
-		width: 15%;
-	    height: 140px;
+	    height: 250px;
+	    width: 30%;
+	}
+	.Header-name {
+	    font-size: 3.5em;
 	}
 }
+
 @media screen and (max-width: 768px){
-	
 	.Profile-colum{
 		padding: .5em;
 	}
@@ -275,7 +320,8 @@
 		padding-top: 2em;
 	}
 	.Header-image {
-	    height: 120px;
+	    height: 250px;
+	    width: 35%;
 	}
 	.Header-name {
 	    font-size: 3em;
@@ -305,6 +351,28 @@
 	    padding: .1em 0;
 	    font-size: 1em;
 	}
+	.Header-imageContainer p{
+		-webkit-margin-before: 0;
+		-webkit-margin-after: 0;
+	}
+}
+
+@media screen and (max-width: 700px){
+	.Header-image {
+	    height: 220px;
+	    width: 35%;
+	}
+	.Header-name {
+	    font-size: 2.5em;
+	}
+	.descr {
+	    font-size: 1.5em;
+	    padding: 0;
+	}
+	.Header-imageContainer p{
+		-webkit-margin-before: 0;
+		-webkit-margin-after: 0;
+	}
 }
 
 @media screen and (max-width: 620px){		
@@ -313,6 +381,57 @@
 	}	
 	#Work-imageTab{
 		display: none;
+	}
+	.Header-image {
+	    height: 200px;
+	    width: 35%;
+	}
+	.Header-name {
+	    font-size: 2.5em;
+	}
+	.descr {
+	    font-size: 1.5em;
+	    padding: 0;
+	}
+	.Header-imageContainer p{
+		-webkit-margin-before: 0;
+		-webkit-margin-after: 0;
+	}
+}
+
+@media screen and (max-width: 580px){
+	.Header-name {
+	    font-size: 3.5em;
+	}
+	.descr {
+	    font-size: 1.3em;
+	    padding: 0;
+	}
+	.Header-image {
+	    height: 180px;
+	    width: 35%;
+	}
+	.Header-imageContainer p{
+		-webkit-margin-before: 0;
+		-webkit-margin-after: 0;
+	}
+}
+
+@media screen and (max-width: 540px){
+	.Header-name {
+	    font-size: 3.3em;
+	}
+	.descr {
+	    font-size: 1.3em;
+	    padding: 0;
+	}
+	.Header-image {
+	    height: 180px;
+	    width: 40%;
+	}
+	.Header-imageContainer p{
+		-webkit-margin-before: 0;
+		-webkit-margin-after: 0;
 	}
 }
 
@@ -325,6 +444,32 @@
 	}
 	#Work-imageTab{
 		display: none;
+	}
+	.Header-image {
+	    height: 180px;
+	    width: 46%;
+	}
+	.Header-imageContainer p{
+		-webkit-margin-before: 0;
+		-webkit-margin-after: 0;
+	}
+}
+
+@media screen and (max-width: 420px){
+	.Header-image {
+	    height: 200px;
+	    width: 50%;
+	}
+	.Header-name {
+	    font-size: 3.3em;
+	}
+	.descr {
+	    font-size: 2em;
+	    padding: 0;
+	}
+	.Header-imageContainer p{
+		-webkit-margin-before: 0;
+		-webkit-margin-after: 0;
 	}
 }
 
